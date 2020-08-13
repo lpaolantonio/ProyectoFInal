@@ -1,0 +1,79 @@
+/* Estoy intentando seguir el modelo que hice en FIGMA https://www.figma.com/file/gINYq8Euezjboy9rc6nvhH/Simulador-Interactivo?node-id=13%3A98  */
+
+.wrapper {
+max-width: 1200px;
+margin: 0 auto;
+height: 40px;
+}
+
+.header-container{
+    background: #ffffff;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.back-btn {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    left: 1px;
+    top: 0px;
+}
+.close-btn {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    right: 1px;
+    top: 0px;
+}
+
+.button0 {
+display: flexbox;
+align-items: center;
+text-align: center;
+align-items: center;
+text-align: center;
+background: #FFFFFF;
+border: 1px solid #475062;
+box-sizing: border-box;
+border-radius: 6px;
+font-family: sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: -0.015em;
+}
+
+.button1 {
+display: flexbox;
+align-items: center;
+text-align: center;
+align-items: center;
+text-align: center;
+background: #475062;
+border: 1px solid #475062;
+box-sizing: border-box;
+border-radius: 6px;
+color: #ffffff;
+font-family: sans-serif;
+font-style: inherit;
+font-size: 14px;
+line-height: 18px;
+letter-spacing: -0.015em;
+}
+
+h1 {
+    font-family: roboto;
+}
+p {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
