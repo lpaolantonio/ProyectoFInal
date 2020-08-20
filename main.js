@@ -1,20 +1,35 @@
 /* 
-Simulador de Trading simplificando http://trading.mtrschool.com.ar/
+
+Simulador de Trading - simplificando http://trading.mtrschool.com.ar/
 
 Pasos:
 1) LogIn
-2) Variables Globales
-Se muestran datos de las variables globales para las funciones “comprar” y “vender”
-    Input: Fechas: Inicial / Final
-    Monto Inicial
-    Monto Inicial = 1000000
-    Comisiones
-    Márgen
+Se puede declarar un nombre de usuario o continuar como “Invitado”. 
+
+2) Declaración de Variables Globales
+Se muestran datos de las variables globales: Semana de Simulación: Se debe elegir Fecha Inicial y Fecha Final, esta última hasta el último día hábil anterior a la fecha actual.
+- Monto Inicial = $1.000.000
+- Comisiones por Rubro:
+    - Agro = 1%
+    - Financiero = 2%
+    - Otros productos = 3%
+
 3) Elección del Producto
-4) Tendencia histórica (se podría usar un JSON o API) https://apihub.primary.com.ar/assets/docs/PrimaryAPI-BO.pdf
+Con la visualización de dos nuevas variables (“precios” y “márgenes”) el usuario deberá elegir sobre 5 productos posibles.
+
+4) Tendencia histórica (se podría usar un JSON o API) 
+Utilizando información del mercado se muestra un gráfico con la evolución de precios del producto una semana antes a la Fecha Inicial de la simulación.
+Ver: https://apihub.primary.com.ar/assets/docs/PrimaryAPI-BO.pdf
+
 5) ¿Comprar o Vender?
-6) Simular iteraciones “Fecha inicial/final” / Mostrar progresión mediante animación
-7) Mostrar un resultado:
+Teniendo en cuenta toda la información proporcionada, el usuario deberá elegir:
+- la cantidad del producto que desea operar, con la limitación del monto inicial disponible
+- si desea “comprar” o “vender” el producto
+
+6) Simular iteraciones entre las Fecha inicial/final con los datos de la base (JSON o API)
+
+7) Mostrar el resultado, sumando o restando al monto inicial.
+
  */
 
 var userName;
